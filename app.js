@@ -9,6 +9,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/form2');
 app.use(express.static(__dirname + '/public'));
 
+// start schema
 var formSchema = new mongoose.Schema({
 
 	firstName:{
@@ -29,7 +30,7 @@ app.use('/contact', (req, res) => {
 res.sendFile(__dirname + '/contact.html');
 });
 
-
+// schema action
 app.post('/login', (req, res) => {
 	var myData = new newForm(req.body);
 	myData.save()
