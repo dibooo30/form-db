@@ -1,0 +1,50 @@
+*{
+	box-sizing: border-box;
+}
+
+.contianer{
+	width: 80%;
+	margin: 20px auto;
+}
+.contianer .left{
+	width: 50%;
+	float: left;
+}
+.contianer .left input{
+width: 70%;
+float: right;
+margin-top: 20px;
+padding: 10px;
+height: 35px;
+font-size: 18px;
+
+}
+.contianer .left input:first-of-type{
+	margin: 0px;
+}
+.contianer .left label{
+	float: left;
+	line-height: 20px;
+	width: 30%;
+	margin-top: 40px;
+	font-size: 20px;
+
+}
+.contianer .left label:first-of-type{
+	margin: 0px;
+}
+.contianer .right{
+	width: 50%;
+	float: right;
+	padding-left: 20px;
+
+}
+.contianer .right textarea{
+width: 100%;
+height: 110px;
+}
+.contianer .right input{
+	width: 100%;
+	font-size: 20px;
+
+}
